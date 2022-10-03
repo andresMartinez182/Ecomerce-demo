@@ -1,0 +1,108 @@
+@use './variable.scss' as c;
+
+
+.product {
+    padding: 2rem 2.5rem;
+    .company-name {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: c.$Orange;
+        letter-spacing: 0.18rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .title {
+        color: c.$Very-dark-blue;
+        font-size: 2.9rem;
+        font-weight: 700;
+        margin-bottom: 1.3rem;
+        width: 76%;
+    }
+
+    .description {
+        color: c.$Dark-grayish-blue;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 322px;
+        margin-bottom: 2.2rem;
+    }
+
+    .price-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3.5rem;
+            .count {
+                color: c.$Very-dark-blue;
+                font-weight: bold;
+                font-size: 3.2rem;
+            }
+
+            .discount {
+                color: c.$Orange;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+
+        .old-price {
+            color: c.$Grayish-blue;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: line-through;
+        }
+    }
+
+    .counter-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.4rem 2.5rem;
+        margin-bottom: 2rem;
+        background-color: rgb(211, 209, 209);
+        border-radius: 1rem;
+
+        div {
+            cursor: pointer;
+        }
+
+        .counter {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+    }
+
+    .btn {
+        background-color: c.$Orange;
+        border-radius: 1rem;
+        color: c.$White;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: rgb(250, 136, 29);
+        }
+
+        img {
+            height: 1.6rem;
+            filter: brightness(300%);
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+
+}

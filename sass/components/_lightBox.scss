@@ -1,0 +1,42 @@
+@use './variable.scss' as c;
+
+.content {
+    .light-box {
+        position: relative;
+        .product-hero {
+            width: 100%;
+        }
+
+        .previous {
+            left: 4%;
+            &:hover {
+                left: 3%;
+            }
+        }
+
+        .next {
+            right: 4%;
+            &:hover {
+                right: 3%;
+            }
+        }
+    }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: white;
+            cursor: pointer;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: all 0.3 ease;
+        }
+}

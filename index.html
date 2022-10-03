@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+        <title>E-Commerce</title>
+    </head>
+<body>
+<div class="container">
+    <header>
+        <div class="hamburger-logo-group">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
+            <img src="./assets/icons/logo.svg">
+
+            <nav class="menu hidden">
+                <div class="slide-menu">
+                    <img class="icon-close" src="./assets/icons/icon-close.svg">
+                    <ul>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="cart-avatar-group">
+            <div class="btn-cart">
+                <img src="./assets/icons/icon-cart.svg" alt="icon-cart">
+                <div class="cart-count">3</div>
+            </div>
+
+            <img class="avatar" src="./assets/images/image-avatar.png">
+        </div>
+    </header>
+
+    <div class="content">
+        <!-- light-box -->
+        <section class="light-box">
+            <img class="product-hero" src="./assets/images/image-product-1.jpg" draggable="false">
+            <div class="previous arrow">
+                <img src="./assets/icons/icon-previous.svg" alt="icon-arrow-preview">
+            </div>
+            <div class="next arrow">
+                <img src="./assets/icons/icon-next.svg" alt="icon-arrow-next">
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="company-name">sneaker company</div>
+            <div class="title">Fall Limited Edition Sneakers</div>
+            <p class="description">These low-profile sneakers are your perfect
+                casual wear companion Featuring a durable
+                rubber outer sole, they'll withstand everything
+                the weather can offer.
+            </p>
+            <div class="price-wrapper">
+                <div class="group">
+                    <div class="count">$125.00</div>
+                    <div class="discount">50%</div>
+                </div>
+                <div class="old-price">$250.00</div>
+            </div>
+            <div class="counter-btn-group">
+                <div class="counter-wrapper">
+                    <div>
+                        <img id="btnMinus" src="./assets/icons/icon-minus.svg" alt="icon-minus">
+                    </div>
+                    <div class="counter">0</div>
+                    <div>
+                        <img id="btnPlus" src="./assets/icons/icon-plus.svg" alt="icon-plus">
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <img src="./assets/icons/icon-cart.svg" alt="icon cart">
+                <p>Add to cart</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
